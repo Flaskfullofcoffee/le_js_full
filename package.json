@@ -1,0 +1,27 @@
+{
+  "name": "le_js_full",
+  "version": "1.0.0",
+  "description": "This is the full starting application (with image gallery) for the final chapter of [*Learn Enough JavaScript to Be Dangerous*](https://www.learnenough.com/javascript-tutorial) by Michael Hartl, based on the sample application developed in [*Learn Enough CSS & Layout to Be Dangerous*](https://www.learnenough.com/css-and-layout-tutorial) by Lee Donahoe and Michael Hartl.",
+  "main": "index.js",
+  "scripts": {
+    "sass:watch": "sass --watch scss:css",
+    "server": "browser-sync start --server --files css index.html scripts",
+    "start": "concurrently 'npm run sass:watch' 'npm run server'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Flaskfullofcoffee/le_js_full.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Flaskfullofcoffee/le_js_full/issues"
+  },
+  "homepage": "https://github.com/Flaskfullofcoffee/le_js_full#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "concurrently": "^4.1.0",
+    "node-sass": "^4.11.0"
+  }
+}
